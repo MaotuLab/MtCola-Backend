@@ -1,0 +1,40 @@
+{
+  "name": "Teacher",
+  "plural": "teachers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "default": " a qingschool teacher"
+    },
+    "signature": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "number"
+    },
+    "avatar": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

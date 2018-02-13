@@ -1,0 +1,41 @@
+{
+  "name": "Course",
+  "plural": "courses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "images/course_bg.jpg"
+    },
+    "price": {
+      "type": "number"
+    },
+    "thumb": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "classroom": {
+      "type": "belongsTo",
+      "model": "Classroom",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

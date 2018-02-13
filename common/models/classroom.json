@@ -1,0 +1,32 @@
+{
+  "name": "Classroom",
+  "plural": "classrooms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string"
+    }
+
+  },
+  "validations": [],
+  "relations": {
+    "courses": {
+      "type": "hasMany",
+      "model": "Course",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

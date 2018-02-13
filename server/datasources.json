@@ -3,16 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "qingedu": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "mongodb://localhost:27017",
-    "database": "qingedu",
-    "password": "",
-    "name": "qingedu",
-    "user": "",
-    "connector": "mongodb"
-  },
   "mongodb": {
     "host": "localhost",
     "port": 27017,

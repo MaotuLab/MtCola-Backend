@@ -50,5 +50,9 @@
   "Comment": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "Section": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

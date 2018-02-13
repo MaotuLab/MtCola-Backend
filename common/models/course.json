@@ -15,8 +15,14 @@
       "type": "string",
       "default": "images/course_bg.jpg"
     },
+    "videoUrl": {
+      "type": "string"
+    },
     "price": {
       "type": "number"
+    },
+    "resources": {
+      "type": "string"
     },
     "thumb": {
       "type": "string"
@@ -27,12 +33,12 @@
   },
   "validations": [],
   "relations": {
-    "classroom": {
+    "section": {
       "type": "belongsTo",
-      "model": "Classroom",
+      "model": "Section",
       "foreignKey": "",
       "options": {
-        "nestRemoting": true
+        "nestRemoting": false
       }
     }
   },

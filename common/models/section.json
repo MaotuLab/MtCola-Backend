@@ -1,36 +1,31 @@
 {
-  "name": "Classroom",
-  "plural": "classrooms",
+  "name": "Section",
+  "plural": "sections",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "master": {
-      "type": "string"
-    },
-    "state": {
+    "subTitle": {
       "type": "string"
     },
     "thumb": {
       "type": "string"
+    },
+    "price": {
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "sections": {
+    "courses": {
       "type": "hasMany",
-      "model": "Section",
-      "foreignKey": ""
-    },
-    "teachers": {
-      "type": "hasMany",
-      "model": "Teacher",
+      "model": "Course",
       "foreignKey": ""
     }
   },
